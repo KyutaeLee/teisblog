@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Nick's Blog</title>
+    <title>Tei's Blog</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -27,12 +27,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{% url 'home' %}">Nick's Blog</a>
+          <a class="navbar-brand" href="{% url 'home' %}">Tei's Blog</a>
         </div>
         <div class="collapse navbar-collapse" id="mynav">
           <ul class="nav navbar-nav">
             <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="http://www.twitter.com/nickchuckwalter">Twitter</a></li>
+            <li><a href="http://www.twitter.com/rbxofjqn">Twitter</a></li>
           </ul>
         </div>
       </div>
@@ -48,27 +48,26 @@
       <img src="{{ post.image.url }}" class="img-responsive center-block" style="max-height:300px;" />
       <br />
       <p>{{ post.body }}</p>
-      <br />
-      <br />
-
       <div id="disqus_thread"></div>
-        <script>
+<script>
 
-
-
-        var disqus_config = function () {
-        this.page.identifier = 'post-{{ post.id }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = '//nickscoolblog.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://teisblog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
       </div>
 
